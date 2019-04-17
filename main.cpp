@@ -62,7 +62,7 @@ int search(std::thread::id thID){
 		std::uniform_int_distribution<> dis(100, 500); //generate a random integer
 		//between .1 to .5
 		int n = dis(gen);
-		//cout << "DEBUG: Sleep : --------------->>>>>>>>>>>"<< std::chrono::milliseconds(n).count() << endl;
+	
 		std::this_thread::sleep_for(std::chrono::milliseconds(n));
 	}
 
